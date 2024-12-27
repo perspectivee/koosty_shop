@@ -38,15 +38,15 @@ body {
 
 /* Popular pics component */
 
-.popular-picks-btn#bags{
+.popular-picks-btn#bags {
   background-image: url('../public/assets/images/Group 7.png');
 }
 
-.popular-picks-btn#accessories{
+.popular-picks-btn#accessories {
   background-image: url('../public/assets/images/Group 18.png');
 }
 
-.popular-picks-btn#shoes{
+.popular-picks-btn#shoes {
   background-image: url('../public/assets/images/Group 11.png');
 }
 
@@ -68,3 +68,13 @@ body {
 #slider {
   height: 400px;
 }
+
+/* Advert Component */
+
+.advert-image {
+  height: 200px;
+  width: ;
+  object-fit: cover;
+}
+
+/* ProductCard Component */

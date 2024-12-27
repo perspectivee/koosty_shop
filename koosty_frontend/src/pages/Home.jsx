@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import PopularPicks from '../components/PopularPicks';
 import MustGift from '../components/MustGift';
+import Advert from '../components/Advert'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <PopularPicks />
       <MustGift />
+      <Advert />
     </main>
   )
 }

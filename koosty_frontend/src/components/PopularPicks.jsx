@@ -1,7 +1,7 @@
 import '../index.css';
 const PopularPicks = () => {
   return (
-    <section className="h-screen w-full bg-slate-300">
+    <section className="h-screen w-screen bg-slate-300">
       <h2 className="text-gray-900 text-4xl text-center py-20 uppercase">
         Popular Picks
       </h2>

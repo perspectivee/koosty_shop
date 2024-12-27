@@ -58,3 +58,13 @@ body {
 }
 
 
+/* Must gift component */
+
+.must-gift-btn {
+  height: 300px;
+  width: 300px;
+}
+
+#slider {
+  height: 400px;
+}

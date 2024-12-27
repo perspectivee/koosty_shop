@@ -1,4 +1,4 @@
-
+import { FaCartPlus } from "react-icons/fa";
 const ProductCard = () => {
   return (
     <div className="product-card">
@@ -13,7 +13,7 @@ const ProductCard = () => {
           </p>
         </div>
         <button className="add-to-cart-btn">
-
+          <FaCartPlus />
         </button>
       </div>
     </div>

@@ -78,3 +78,8 @@ body {
 }
 
 /* ProductCard Component */
+
+.product-card {
+  height: 400px;
+  width: 300px;
+}

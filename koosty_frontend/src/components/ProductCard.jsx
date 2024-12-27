@@ -1,4 +1,5 @@
 import { FaCartPlus } from "react-icons/fa";
+import '../index.css'
 const ProductCard = () => {
   return (
     <div className="product-card">

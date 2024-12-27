@@ -34,3 +34,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* Popular pics component */
+
+.popular-picks-btn#bags{
+  background-image: url('../public/assets/images/Group 7.png');
+}
+
+.popular-picks-btn#accessories{
+  background-image: url('../public/assets/images/Group 18.png');
+}
+
+.popular-picks-btn#shoes{
+  background-image: url('../public/assets/images/Group 11.png');
+}
+
+
+.popular-picks-btn {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+

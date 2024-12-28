@@ -2,9 +2,9 @@ import ProductCard from "./ProductCard"
 
 const NewArrivals = () => {
   return (
-    <section className="w-screen h-[600px] px-10">
+    <section className="w-screen h-[600px] px-10 flex flex-col items-center">
       <h2 className="text-gray-900 text-4xl text-center py-10 uppercase">New Arrivals</h2>
-      <div className="card-container flex overflow-scroll">
+      <div className="card-container flex">
         <ProductCard />
         <ProductCard />
         <ProductCard />

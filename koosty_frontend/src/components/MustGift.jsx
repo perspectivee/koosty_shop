@@ -4,7 +4,7 @@ const MustGift = () => {
   return (
     <section className="w-screen h-[600px]">
       <h2 className="text-gray-900 text-4xl text-center py-10 uppercase">Must Gift</h2>
-      <div id="slider" className="flex overflow-x-scroll px-11">
+      <div id="slider" className="flex px-11">
         <button className="must-gift-btn mr-5">
           <img className="object-cover" src="/assets/images/Group 7.png" alt="bags" />
         </button>

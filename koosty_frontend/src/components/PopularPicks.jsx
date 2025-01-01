@@ -1,11 +1,11 @@
 import '../index.css';
 const PopularPicks = () => {
   return (
-    <section className="h-screen w-full bg-slate-300">
+    <section className="h-screen bg-slate-300">
       <h2 className="text-gray-900 text-4xl text-center py-20 uppercase">
         Popular Picks
       </h2>
-      <div className="flex flex-row px-9">
+      <div className="flex flex-row px-4">
         <button id='bags' className="text-3xl text-gray-100 font-bold basis-1/3 popular-picks-btn relative justify-items-center items-center">
           Bags
         </button>

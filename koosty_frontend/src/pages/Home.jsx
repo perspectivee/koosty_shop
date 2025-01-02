@@ -6,6 +6,7 @@ import NewArrivals from '../components/NewArrivals';
 import Footer from '../components/Footer';
 import ProductDetail from './ProductDetail';
 import OrderNow from '../components/OrderNow';
+import ContactUs from '../components/ContactUs';
 
 // imported for test puroposes
 import Navbar from '../components/Navbar';
@@ -22,7 +23,9 @@ const Home = () => {
       {/* below this is for test puroposes */}
       <Navbar />
       {/* <ProductDetail /> */}
-      <OrderNow />
+      {/* <OrderNow /> */}
+      <ContactUs />
+      <Footer />
     </main>
   )
 }

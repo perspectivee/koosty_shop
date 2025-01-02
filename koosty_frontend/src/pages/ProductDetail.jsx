@@ -1,6 +1,4 @@
 import '../index.css';
-
-
 const ProductDetail = () => {
   return (
     <section className='product-detail-container flex h-[80%] w-full'>

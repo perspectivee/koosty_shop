@@ -14,7 +14,7 @@ const ProductCard = () => {
           </p>
         </div>
         <button className="add-to-cart-btn">
-          <FaCartPlus />
+          <FaCartPlus className='add-cart-icon' />
         </button>
       </div>
     </div>

@@ -50,11 +50,20 @@ body {
   background-image: url('../public/assets/images/Group 11.png');
 }
 
+.btns-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 .popular-picks-btn {
-  height: 400px;
+  height: 500px;
+  width: 300px;
+  margin-left: 4rem;
   background-position: center;
   background-size: cover;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
 }
 
 
@@ -80,14 +89,14 @@ body {
 /* ProductCard Component */
 
 .product-card {
-  height: 400px;
+  height: 500px;
   width: 300px;
   margin-right: 20px;
 }
 
 .card-image {
   width: 300px;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -96,6 +105,25 @@ body {
   width: 100%;
   justify-content: space-between;
   padding: 10px 10px;
+}
+
+.view-more-btn {
+  letter-spacing: 0.1rem;
+}
+
+.add-cart-icon {
+  color: rgb(19, 19, 151);
+  font-size: 1.5rem;
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-transform: uppercase;
 }
 
 /* Footer Component */

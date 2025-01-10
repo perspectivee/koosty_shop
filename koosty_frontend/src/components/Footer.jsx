@@ -11,7 +11,6 @@ const Footer = () => {
           <li className='p-2'><a className='font-bold text-lg' href="#">Contacts</a></li>
         </ul>
       </div>
-      <hr />
     </footer>
   )
 }

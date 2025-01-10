@@ -149,7 +149,11 @@ body {
 .footer-logo {
   width: auto;
   height: 50px;
+}
 
+.footer-cotainer {
+  border-bottom: 1px dotted whitesmoke;
+  padding-bottom : 1rem;
 }
 
 /* Navbar component */

@@ -51,23 +51,33 @@ body {
 }
 
 .btns-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 
 .popular-picks-btn {
-  height: 500px;
-  width: 300px;
-  margin-left: 4rem;
+  height: 550px;
+  width: 400px;
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
+  margin-bottom: 4rem;
 }
 
 
 /* Must gift component */
+
+.must-gift-section {
+  width: calc(100vw - 15px);
+  /* overflow-x: scroll; */
+}
+
+.must-gift-container{
+  display: flex;
+}
 
 .must-gift-btn {
   height: 300px;
@@ -75,10 +85,13 @@ body {
 }
 
 #slider {
-  height: 400px;
+  height: auto;
 }
 
 /* Advert Component */
+.advert-section {
+  width: 100%;
+}
 
 .advert-image {
   height: 200px;

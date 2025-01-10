@@ -17,13 +17,14 @@ const Home = () => {
     <main>
       {/* <Hero />
       <PopularPicks />
-      <SearchBar />
+      
       <MustGift />
       <Advert />
       <NewArrivals />
       <Footer /> */}
       {/* below this is for test puroposes */}
       <Navbar />
+      <SearchBar />
       <ProductDetail />
       {/* <OrderNow /> */}
       {/* <ContactUs /> */}

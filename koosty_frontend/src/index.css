@@ -270,10 +270,16 @@ body {
 .search-bar {
   min-width: 500px;
   margin-right: 2rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px rgb(12, 12, 138) solid;
+  border: 1px #014567 solid;
   border-radius: 30px;
+  outline: none;
+}
+
+.search-bar:active {
+  border: 1px #014567 solid;
+  outline: none;
 }
 
 .search-button {
@@ -282,5 +288,6 @@ body {
 
 .search-icon {
   font-size: 2rem;
-  color:  rgb(12, 12, 138);
+  color:  #014567;
+  font-weight: bolder;
 }

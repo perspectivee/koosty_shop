@@ -154,7 +154,17 @@ body {
 .footer-cotainer {
   border-bottom: 1px dotted whitesmoke;
   padding-bottom : 1rem;
+  font-family: 'Jomolhari';
+  font-weight: 500;
 }
+
+.footer-links {
+  display: flex;
+  justify-content: start;
+  gap: 4rem;
+  align-items: center;
+}
+
 
 /* Navbar component */
 .logo-link {

@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import ProductDetail from './ProductDetail';
 import OrderNow from '../components/OrderNow';
 import ContactUs from '../components/ContactUs';
+import SearchBar from '../components/SearchBar';
 
 // imported for test puroposes
 import Navbar from '../components/Navbar';
@@ -16,6 +17,7 @@ const Home = () => {
     <main>
       <Hero />
       <PopularPicks />
+      <SearchBar />
       <MustGift />
       <Advert />
       <NewArrivals />

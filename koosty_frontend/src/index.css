@@ -231,3 +231,31 @@ body {
   color: blue;
   border: 1px blue solid;
 }
+
+/* SearchBar Component */
+
+.search-bar-section{
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  min-width: 500px;
+  margin-right: 2rem;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  border: 1px rgb(12, 12, 138) solid;
+  border-radius: 30px;
+}
+
+.search-button {
+  padding: 0.25rem 0.5rem;
+}
+
+.search-icon {
+  font-size: 2rem;
+  color:  rgb(12, 12, 138);
+}

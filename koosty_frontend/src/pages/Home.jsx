@@ -15,19 +15,19 @@ import Navbar from '../components/Navbar';
 const Home = () => {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <PopularPicks />
       <SearchBar />
       <MustGift />
       <Advert />
       <NewArrivals />
-      <Footer />
+      <Footer /> */}
       {/* below this is for test puroposes */}
-      {/* <Navbar /> */}
-      {/* <ProductDetail /> */}
+      <Navbar />
+      <ProductDetail />
       {/* <OrderNow /> */}
       {/* <ContactUs /> */}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   )
 }

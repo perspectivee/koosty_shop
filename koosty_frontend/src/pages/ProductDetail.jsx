@@ -1,4 +1,5 @@
 import '../index.css';
+import { CiShoppingCart } from "react-icons/ci";
 const ProductDetail = () => {
   return (
     <section className='product-detail-container flex h-[80%] w-full'>
@@ -14,14 +15,14 @@ const ProductDetail = () => {
         <h2 className="product-name text-4xl ">
           Denim Jacket
         </h2>
-        <p className='product-detail'>
+        <p className='product-detail-detail'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <p className="price">
+        <p className="product-detail-price">
           2000 ETB
         </p>
-        <button className='add-to-cart-btn'>
-
+        <button className='product-detail-add-to-cart-btn'>
+          <CiShoppingCart className='proudct-detail-add-to-cart-icon' />
         </button>
       </div>
     </section>

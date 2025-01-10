@@ -24,10 +24,10 @@ const Home = () => {
       <Footer /> */}
       {/* below this is for test puroposes */}
       <Navbar />
-      <SearchBar />
-      <ProductDetail />
-      {/* <OrderNow /> */}
-      {/* <ContactUs /> */}
+      {/* <SearchBar />
+      <ProductDetail /> */}
+      <OrderNow />
+      <ContactUs />
       <Footer />
     </main>
   )

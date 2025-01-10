@@ -253,8 +253,8 @@ body {
 
 .send-msg-btn {
   letter-spacing: 0.2rem;
-  color: blue;
-  border: 1px blue solid;
+  color: #014567;
+  border: 1px #014567 solid;
 }
 
 /* SearchBar Component */
@@ -290,4 +290,20 @@ body {
   font-size: 2rem;
   color:  #014567;
   font-weight: bolder;
+}
+
+/* OrderNow component */
+
+.order-now-label, .contact-us-label {
+  font-weight: 300;
+  letter-spacing: 0.25rem;
+  margin-bottom: 80px;
+}
+
+.form-input{
+  outline: none;
+}
+
+.form-input:focus{
+  border-bottom: rgb(30,64,175) 1px solid;
 }

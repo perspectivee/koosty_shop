@@ -17,7 +17,6 @@ const Home = () => {
     <main>
       {/* <Hero />
       <PopularPicks />
-      
       <MustGift />
       <Advert />
       <NewArrivals />
@@ -26,7 +25,7 @@ const Home = () => {
       <Navbar />
       {/* <SearchBar />
       <ProductDetail /> */}
-      <OrderNow />
+      {/* <OrderNow /> */}
       <ContactUs />
       <Footer />
     </main>

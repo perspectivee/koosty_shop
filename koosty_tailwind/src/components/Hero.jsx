@@ -3,7 +3,7 @@ import '../index.css';
 const Hero = () => {
   return (
     <section
-      className="h-screen w-full flex flex-col bg-center bg-cover pt-[9.5rem] gap-[7.6rem] items-center"
+      className="h-screen w-full flex flex-col bg-center bg-cover pt-[9.5rem] gap-[6rem] items-center"
       style={{ backgroundImage: "url('/assets/images/image 4.jpg')" }}
     >
       <div className='absolute bg-black top-0 left-0 h-screen w-full opacity-20'>

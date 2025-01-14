@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'customSerif': ['Jomolhari', 'serif'],
         'customSans': ['Julius Sans One', 'sans-serif']
+      },
+      height: {
+        'popularPicks': ['calc(100vh - 10rem)']
       }
     },
   },

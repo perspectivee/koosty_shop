@@ -3,10 +3,10 @@ import '../index.css';
 const Hero = () => {
   return (
     <section
-      className="h-screen w-full  bg-center bg-cover "
+      className="h-screen w-full bg-center bg-cover "
       style={{ backgroundImage: "url('/assets/images/hero-bg-hd.webp')" }}
     >
-      {/* <div className='absolute bg-black top-0 left-0 h-screen w-full opacity-20'>
+      {/* <div className=' absolute bg-[#014567] top-0 left-0 h-screen w-full opacity-[37%]'>
 
       </div> */}
       <div className="hero-container flex flex-col justify-around p-[2rem] gap-[5rem] items-center">

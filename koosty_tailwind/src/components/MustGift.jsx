@@ -20,7 +20,7 @@ const MustGift = () => {
       <div className="slider flex overflow-auto gap-[1.5rem]">
         {
           sliderImgURLs.map((item, index) => (
-            <img className="object-cover h-[22rem]" src={item} alt="must gift" key={index} />
+            <img className="object-cover h-[22rem] w-[22rem]" src={item} alt="must gift" key={index} />
           ))
         }
       </div>

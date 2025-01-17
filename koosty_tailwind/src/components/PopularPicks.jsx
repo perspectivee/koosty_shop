@@ -16,7 +16,7 @@ const PopularPicks = () => {
     },
   ]
   return (
-    <section className="h-screen w-full flex flex-col items-center p-[2rem] ">
+    <section className="h-screen w-full flex flex-col items-center py-[2rem] ">
       <h2 className="font-customSans text-[4rem]">
         Popular Picks
       </h2>

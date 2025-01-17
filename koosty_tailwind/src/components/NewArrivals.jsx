@@ -55,6 +55,9 @@ const NewArrivals = () => {
           )
         }
       </div>
+      <button className="text-[#014567] uppercase tracking-widest border border-[#014567]  text-[1.5rem] px-[5rem] py-[1rem] font-light">
+        View More
+      </button>
     </section>
   )
 }

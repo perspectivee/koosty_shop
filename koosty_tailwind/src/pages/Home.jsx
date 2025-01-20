@@ -4,6 +4,7 @@ import MustGift from "../components/MustGift";
 import AdOne from "../components/AdOne";
 import NewArrivals from "../components/NewArrivals";
 import AdTwo from "../components/AdTwo";
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <main>
@@ -13,6 +14,7 @@ const Home = () => {
       <AdOne />
       <NewArrivals />
       <AdTwo />
+      <Footer />
     </main>
   )
 }

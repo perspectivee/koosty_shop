@@ -2,7 +2,7 @@ import { BsCartFill } from "react-icons/bs";
 
 const ProductCard = ({ item }) => {
   return (
-    <div className='' >
+    <div className='w-max' >
       <img className="object-cover h-[544px] w-[372px]" src={item.imgURL} alt={item.name} />
       <div className="flex items-center justify-between p-4 font-customSans" >
         <div className="flex flex-col basis-2/3 items-center">

@@ -34,7 +34,9 @@ const ProductDetail = () => {
         <p className="font-customSans text-[1.7rem] text-gray-700 mt-4">
           {data.price}
         </p>
-        <button className="w-[70%] bg-[#014567] flex justify-center py-4 px-8 mt-4">
+        <button className="w-[70%]  flex justify-center py-4 px-8 mt-4"
+          style={{ background: 'linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)' }}
+        >
           <BsCartFill className="text-white text-[2.2rem]" />
         </button>
       </section>

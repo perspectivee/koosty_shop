@@ -24,7 +24,7 @@ const PopularPicks = () => {
         {
           buttonsData.map((button, index) =>
           (
-            <PopularPicksButton name={button.name} imgURL={button.imgURL} />
+            <PopularPicksButton key={index} name={button.name} imgURL={button.imgURL} secondBtn={index === 1 ? true : false} />
           )
           )
         }

@@ -39,7 +39,7 @@ const NewArrivals = () => {
   }
 
   return (
-    <section className="h-screen w-full flex flex-col items-center p-[2rem] ">
+    <section className="w-full flex flex-col items-center p-[2rem] ">
       <h2 className="font-customSans text-[4rem]">
         New Arrivals
       </h2>

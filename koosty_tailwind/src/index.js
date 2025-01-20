@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
-
+        <Route path='/productdetail' element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

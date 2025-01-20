@@ -49,7 +49,7 @@ const NewArrivals = () => {
             (arrival, index) =>
             (
               <ProductCard
-                arrival={arrival}
+                item={arrival}
               />
             )
           )

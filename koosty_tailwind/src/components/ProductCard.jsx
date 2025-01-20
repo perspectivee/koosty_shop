@@ -1,16 +1,16 @@
 import { BsCartFill } from "react-icons/bs";
 
-const ProductCard = ({ arrival }) => {
+const ProductCard = ({ item }) => {
   return (
     <div className='' >
-      <img className="object-cover h-[544px] w-[372px]" src={arrival.imgURL} alt={arrival.name} />
+      <img className="object-cover h-[544px] w-[372px]" src={item.imgURL} alt={item.name} />
       <div className="flex items-center justify-between p-4 font-customSans" >
         <div className="flex flex-col basis-2/3 items-center">
           <p>
-            {arrival.name}
+            {item.name}
           </p>
           <p>
-            {arrival.price}
+            {item.price}
           </p>
         </div>
         <div className="basis-1/3 grid place-content-center">

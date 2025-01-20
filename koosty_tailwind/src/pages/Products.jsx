@@ -1,7 +1,12 @@
-
+import Navbar from "../components/Navbar";
+import SearchBar from "../components/SearchBar";
 const Products = () => {
   return (
-    <div>Products</div>
+    <main>
+      <Navbar />
+      <SearchBar />
+
+    </main>
   )
 }
 

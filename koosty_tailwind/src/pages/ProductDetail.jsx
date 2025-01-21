@@ -18,9 +18,9 @@ const ProductDetail = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-max p-8 flex flex-col items-center lg:flex-row lg:items-start lg:gap-4">
+      <section className="mt-[3rem] h-max p-16 flex flex-col items-center lg:flex-row lg:items-start lg:gap-4">
         <img className="h-[30rem] object-cover lg:order-2 lg:h-[]" src={data.mainImgURL} alt="main image" />
-        <div className="flex w-[90%] justify-center mt-[1rem] lg:order-1 lg:flex-col lg:w-[400px] lg:mt-0 lg:items-start lg:gap-4">
+        <div className="flex w-[90%] justify-center mt-[1rem] lg:order-1 lg:flex-col lg:w-[800px] lg:mt-0 lg:items-start lg:gap-4">
           <img className="w-[33%] lg:w-full lg:h-[9rem] object-cover" src={data.imgURL1} alt="image 1" />
           <img className="w-[33%] lg:w-full lg:h-[9rem] object-cover" src={data.imgURL2} alt="image 2" />
           <img className="w-[33%] lg:w-full lg:h-[9rem] object-cover" src={data.imgURL3} alt="image 3" />

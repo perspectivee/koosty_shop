@@ -12,7 +12,6 @@ const Footer = () => {
             <li className="md:mr-[4rem]"><Link to="/contact">Contact</Link></li>
 
           </ul>
-
         </div>
       </div>
     </footer>

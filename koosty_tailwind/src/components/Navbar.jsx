@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 const Navbar = () => {
   return (
-    <nav className="flex p-8 justify-around">
+    <nav className="flex px-[4rem] py-8 gap-[15rem]">
       <img className="h-[3rem] md:h-[5rem]" src="/assets/images/black.png" alt="logo" />
       <ul className="w-[40%] hidden md:flex justify-start h-[3rem] md:h-[5rem] items-center">
         <li className="mr-[4rem]">

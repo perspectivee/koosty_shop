@@ -5,6 +5,7 @@ import App from './App';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
+import ContactPage from './pages/ContactPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ root.render(
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
         <Route path='/productdetail' element={<ProductDetail />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

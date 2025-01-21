@@ -18,7 +18,7 @@ const ProductDetail = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-max p-8 flex flex-col items-center">
+      <section className="h-max p-8 flex flex-col md:flex-row items-center">
         <img className="h-[40rem] object-cover" src={data.mainImgURL} alt="main image" />
         <div className="flex w-[90%] justify-center mt-[1rem]">
           <img className="w-[33%] object-cover" src={data.imgURL1} alt="image 1" />

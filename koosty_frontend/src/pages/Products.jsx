@@ -41,7 +41,7 @@ export default function Products() {
               key={index}
               id={product.id}
               imageUrl={product.imgUrl}
-              productName={product.productName}
+              productName={product.name}
               price={product.price}
             />
           ))}

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import dummyProducts from "../../data/Products"; // Import dummyProducts from the correct path
 import Navbar from "../components/Navbar"; // Import the Navbar component
+import Footer from '../components/Footer'
 
 export default function ProductDetail() {
   const { id } = useParams(); // Get the product ID from URL params
@@ -16,7 +17,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <div>
+    <main className="h-screen">
       {/* Navbar at the Top */}
       <Navbar />
 
@@ -28,17 +29,17 @@ export default function ProductDetail() {
           <img
             src={product.imgUrl}
             alt={product.name}
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-64 object-cover shadow-md" // Removed rounded-lg
           />
 
           {/* Additional Images in a Row */}
-          <div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-4 justify-center"> {/* Centered horizontally */}
             {product.imgUrlArr.map((url, index) => (
               <img
                 key={index}
                 src={url}
                 alt={`${product.name} - ${index + 1}`}
-                className="w-1/3 h-auto rounded-lg shadow-md"
+                className="w-20 h-20 object-cover shadow-md" // Removed rounded-lg
               />
             ))}
           </div>
@@ -79,15 +80,15 @@ export default function ProductDetail() {
         </div>
 
         {/* Desktop Layout (md and above) */}
-        <div className="hidden md:grid md:grid-cols-3 md:gap-8">
+        <div className="hidden md:grid md:grid-cols-[1fr_3fr_2fr] md:gap-8 md:max-h-screen">
           {/* Left Column: Additional Images */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center"> {/* Centered horizontally */}
             {product.imgUrlArr.map((url, index) => (
               <img
                 key={index}
                 src={url}
                 alt={`${product.name} - ${index + 1}`}
-                className="w-full h-full object-cover rounded-lg shadow-md"
+                className="w-20 h-20 object-cover shadow-md" // Removed rounded-lg
               />
             ))}
           </div>
@@ -97,7 +98,7 @@ export default function ProductDetail() {
             <img
               src={product.imgUrl}
               alt={product.name}
-              className="w-full h-full object-cover rounded-lg shadow-md"
+              className="w-full h-96 object-cover shadow-lg transform transition-transform duration-300 hover:scale-105" // Removed rounded-lg
             />
           </div>
 
@@ -136,6 +137,7 @@ export default function ProductDetail() {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </main>
   );
 }

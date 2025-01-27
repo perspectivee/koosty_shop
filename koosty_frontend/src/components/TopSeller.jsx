@@ -3,7 +3,7 @@ import React from "react";
 export default function TopSeller({ topText, imageUrl }) {
   return (
     <section
-      className="p-8 rounded-lg flex flex-col md:flex-row items-center justify-between"
+      className="p-8 rounded-lg flex flex-col md:flex-row items-center justify-between mb-8"
       style={{
         background:
           "linear-gradient(63.7deg, #D9D9D9 -6.41%, rgba(1, 69, 103, 0.47) 38.03%)",

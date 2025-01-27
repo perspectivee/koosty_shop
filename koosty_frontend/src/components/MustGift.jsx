@@ -1,31 +1,72 @@
-import '../index.css';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom"; // Import Link for navigation
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
-const MustGift = () => {
+export default function MustGift() {
+  // Array of Lorem Picsum image URLs (600x600 resolution)
+  const images = [
+    "https://picsum.photos/600/600?random=1",
+    "https://picsum.photos/600/600?random=2",
+    "https://picsum.photos/600/600?random=3",
+    "https://picsum.photos/600/600?random=4",
+    "https://picsum.photos/600/600?random=5",
+    "https://picsum.photos/600/600?random=6",
+  ];
+
   return (
-    <section className="must-gift-section ">
-      <h2 className="text-gray-900 text-4xl text-center py-10 uppercase">Must Gift</h2>
-      <div id="slider" className="must-gift-container ">
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 7.png" alt="bags" />
-        </button>
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 8.png" alt="bags" />
-        </button>
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 70.png" alt="bags" />
-        </button>
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 69.png" alt="bags" />
-        </button>
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 11.png" alt="bags" />
-        </button>
-        <button className="must-gift-btn mr-5">
-          <img className="object-cover" src="/assets/images/Group 67.png" alt="bags" />
-        </button>
+    <section className="p-6">
+      {/* Heading */}
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-8">
+        Must Gift
+      </h2>
+
+      {/* Carousel */}
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={20}
+        slidesPerView={2} // Show 2 slides by default
+        loop={true} // Enable infinite loop
+        autoplay={{
+          delay: 2000, // Faster autoplay: 2 seconds between slides
+          disableOnInteraction: false, // Continue autoplay even when user interacts with the carousel
+          pauseOnMouseEnter: true, // Pause autoplay when user hovers over the carousel
+        }}
+        speed={800} // Smooth transition speed (800ms)
+        breakpoints={{
+          640: {
+            slidesPerView: 3, // Show 3 slides on sm screens and above
+          },
+          768: {
+            slidesPerView: 4, // Show 4 slides on md screens and above
+          },
+          1024: {
+            slidesPerView: 5, // Show 5 slides on lg screens and above
+          },
+        }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={image}
+              alt={`Must Gift ${index + 1}`}
+              className="w-full h-auto aspect-square object-cover cursor-pointer"
+              onClick={() => console.log(`Clicked image ${index + 1}`)}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Shop Now Button */}
+      <div className="flex justify-center mt-8">
+        <Link
+          to="/products" // Link to the Products page
+          className="font-custom-sans text-[#014567] border border-[#014567] px-8 py-3 tracking-widest hover:bg-[#014567] hover:text-white transition-colors duration-300"
+        >
+          Shop Now
+        </Link>
       </div>
     </section>
-  )
+  );
 }
-
-export default MustGift

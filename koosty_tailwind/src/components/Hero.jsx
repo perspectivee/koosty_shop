@@ -12,6 +12,8 @@ const Hero = () => {
       <div className="h-screen hero-container flex flex-col justify-around p-[2rem] gap-[5rem] items-center">
         <img className='w-[13.63rem]' src="/assets/images/white.png" alt="logo" />
         <h1 className="text-center text-white font-customSerif text-[4rem]">Denim&nbsp;<br /><span className="line-through">Re</span>Defined</h1>
+        <p className='font-customSans uppercase'>Wear the legacy.</p>
+        <p>Live the trend.</p>
       </div>
     </section>
   )

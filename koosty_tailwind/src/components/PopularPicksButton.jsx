@@ -11,7 +11,7 @@ const PopularPicksButton = ({ imgURL, name, secondBtn }) => {
           // border: '3px '
         }}
       >
-        <p className="max-w-[90%] break-words">
+        <p className="max-w-[90%]">
           {name}
         </p>
       </button>

@@ -20,7 +20,7 @@ const PopularPicks = () => {
       <h2 className="font-customSans text-[4rem]">
         Popular Picks
       </h2>
-      <div className="btns-container flex w-full gap-[1rem] h-popularPicks">
+      <div className="btns-container flex flex-col w-full gap-[1rem] h-popularPicks">
         {
           buttonsData.map((button, index) =>
           (

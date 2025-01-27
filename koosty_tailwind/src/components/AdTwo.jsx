@@ -24,7 +24,7 @@ const AdTwo = () => {
         </button>
       </div>
       <div className="flex-1 flex justify-center">
-        <img src={data.imgURL} alt="trucker jacket" />
+        <img className="object-cover" src={data.imgURL} alt="trucker jacket" />
       </div>
     </section>
   )

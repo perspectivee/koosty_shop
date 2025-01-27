@@ -1,35 +1,27 @@
-import Hero from '../components/Hero';
-import PopularPicks from '../components/PopularPicks';
-import MustGift from '../components/MustGift';
-import Advert from '../components/Advert'
-import NewArrivals from '../components/NewArrivals';
-import Footer from '../components/Footer';
-import ProductDetail from './ProductDetail';
-import OrderNow from '../components/OrderNow';
-import ContactUs from '../components/ContactUs';
-import SearchBar from '../components/SearchBar';
-
-// imported for test puroposes
-import Navbar from '../components/Navbar';
-
-const Home = () => {
+import Hero from "../components/Hero";
+import PopularPicks from "../components/PopularPicks";
+import MustGift from "../components/MustGift";
+import Ad from "../components/Ad";
+import NewArrivals from "../components/NewArrivals";
+import Footer from "../components/Footer";
+import TopSeller from "../components/TopSeller";
+export default function Home() {
   return (
     <main>
-      {/* <Hero />
+      <Hero />
       <PopularPicks />
       <MustGift />
-      <Advert />
+      <Ad
+        backgroundImage="https://picsum.photos/1200/600?random=1"
+        text1="Summer sale"
+        text2="60% off"
+      />
       <NewArrivals />
-      <Footer /> */}
-      {/* below this is for test puroposes */}
-      <Navbar />
-      {/* <SearchBar />
-      <ProductDetail /> */}
-      {/* <OrderNow /> */}
-      <ContactUs />
+      <TopSeller
+        topText="Denim Jacket"
+        imageUrl="https://picsum.photos/300/300?random=1"
+      />
       <Footer />
     </main>
-  )
+  );
 }
-
-export default Home

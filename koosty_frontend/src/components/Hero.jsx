@@ -1,17 +1,44 @@
+import React from "react";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <>
-      <div className="hero-transluncent absolute w-full -z-10 h-screen bg-black opacity-30">
+    <section
+      className="relative h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: "url(/assets/images/hero-bg-hd.webp)" }}
+    >
+      {/* Shade Overlay */}
+      <div
+        className="absolute inset-0 bg-[#014567] opacity-37"
+        style={{ opacity: 0.37 }}
+      ></div>
 
+      {/* Content Container */}
+      <div className="relative z-10 text-center text-white flex flex-col items-center gap-6">
+        {/* Logo */}
+        <img
+          src="/assets/images/white.png" // Replace with your logo path
+          alt="Logo"
+          className="w-24 h-24 object-contain"
+        />
+
+        {/* Heading */}
+        <h2 className="font-custom-serif text-4xl md:text-5xl">
+          <span className="block">Denim</span>
+          <span className="block">
+            <span className="line-through">Re</span>Defined
+          </span>
+        </h2>
+
+        {/* Paragraphs (Visible Only on Mobile) */}
+        <div className="md:hidden flex flex-col gap-4">
+          <p className="font-custom-sans tracking-widest">
+            Discover the best products and services.
+          </p>
+          <p className="font-custom-sans tracking-widest">
+            Experience excellence like never before.
+          </p>
+        </div>
       </div>
-      <div className="hero-background absolute w-full -z-20 h-screen"></div>
-      <section className='hero-section w-full h-screen pt-20 flex flex-col justify-top items-center gap-[200px]'>
-        <img src="/assets/images/white.png" alt="logo" className="w-[217px]" />
-        <h1 className="hero-heading text-5xl text-center text-gray-50" >Denim <br /> <span className="line-through">Re</span>defined</h1>
-      </section>
-    </>
-  )
+    </section>
+  );
 }
-
-export default Hero

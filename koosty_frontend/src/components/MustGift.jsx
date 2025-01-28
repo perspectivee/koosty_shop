@@ -29,11 +29,11 @@ export default function MustGift() {
         slidesPerView={2} // Show 2 slides by default
         loop={true} // Enable infinite loop
         autoplay={{
-          delay: 2000, // Faster autoplay: 2 seconds between slides
+          delay: 0, // No delay between slides
           disableOnInteraction: false, // Continue autoplay even when user interacts with the carousel
-          pauseOnMouseEnter: true, // Pause autoplay when user hovers over the carousel
+          pauseOnMouseEnter: false, // Do not pause autoplay when user hovers over the carousel
         }}
-        speed={800} // Smooth transition speed (800ms)
+        speed={2000} // Slower transition speed (2000ms for smoother effect)
         breakpoints={{
           640: {
             slidesPerView: 3, // Show 3 slides on sm screens and above

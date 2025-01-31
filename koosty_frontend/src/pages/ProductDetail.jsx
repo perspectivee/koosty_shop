@@ -17,7 +17,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <main className="h-screen">
+    <main className="min-h-screen flex flex-col justify-between">
       {/* Navbar at the Top */}
       <Navbar />
 
@@ -59,10 +59,11 @@ export default function ProductDetail() {
             <Link to={`/order/${id}`} className="mt-6 w-full">
               <button
                 onClick={handleAddToCart}
-                className="w-full h-12 flex items-center justify-center"
+                className="w-full h-12 flex items-center justify-center transition-transform duration-300 transform hover:scale-105"
                 style={{
                   background: "linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)",
-                  border: 'none'
+                  border: 'none',
+                  color: 'white', // Ensure text color is white
                 }}
               >
                 <svg
@@ -122,10 +123,11 @@ export default function ProductDetail() {
             <Link to={`/order/${id}`} className="mt-6 w-full">
               <button
                 onClick={handleAddToCart}
-                className="w-full h-12 flex items-center justify-center"
+                className="w-full h-12 flex items-center justify-center transition-transform duration-300 transform hover:scale-105"
                 style={{
                   background: "linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)",
-                  border: 'none'
+                  border: 'none',
+                  color: 'white', // Ensure text color is white
                 }}
               >
                 <svg

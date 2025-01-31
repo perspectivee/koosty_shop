@@ -9,22 +9,22 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSearch} className="w-full max-w-md">
+    <form onSubmit={handleSearch} className="w-full max-w-2xl"> {/* Increased max-width */}
       <div className="flex items-center">
         <input
           type="text"
           placeholder="Search..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+          className="px-6 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 w-full" // Larger padding and fully rounded
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition-colors"
+          className="ml-2 p-3 text-gray-600 hover:text-blue-500 transition-colors" // Removed background, increased size
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-6 w-6" // Increased icon size
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

@@ -20,13 +20,13 @@ export default function Contact() {
   return (
     <div className="bg-white min-h-screen px-6">
       <Navbar />
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 font-bold text-shadow-lg">
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 text-shadow-lg">
         Contact Us!
       </h2>
 
       {formStatus && <p className="text-center text-green-500">{formStatus}</p>}
 
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-xl mx-auto"> {/* Increased max width for desktop */}
         <div className="mb-4">
           <input
             type="text"
@@ -75,7 +75,6 @@ export default function Contact() {
           </button>
         </div>
       </form>
-
     </div>
   );
-} 
+}

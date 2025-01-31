@@ -2,12 +2,13 @@ import React from "react";
 
 export default function PickButton({ imageUrl, text, isMiddleButton = false }) {
   return (
-    <button
-      className={`h-40 sm:h-80 w-full sm:w-[30%] bg-cover bg-center flex items-center justify-center font-custom-sans font-black text-white text-xl text-shadow-lg ${isMiddleButton ? "border-2 border-dotted border-blue-500" : ""
-        }`}
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
-      {text}
-    </button>
+    <div className={`flex-grow ${isMiddleButton ? "relative border-2 border-blue-500" : ""} flex`}>
+      <button
+        className={`flex-grow h-64 sm:h-full w-full bg-cover bg-center flex items-center justify-center font-custom-sans text-3xl text-white ${isMiddleButton ? "p-4" : "p-2"}`}
+        style={{ backgroundImage: `url(${imageUrl})`, overflow: 'hidden', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' }}
+      >
+        <span className="text-center">{text}</span>
+      </button>
+    </div>
   );
 }

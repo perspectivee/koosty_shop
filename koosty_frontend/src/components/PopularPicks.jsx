@@ -3,14 +3,14 @@ import PickButton from "../components/PickButton";
 
 export default function PopularPicks() {
   return (
-    <section className="p-6">
+    <section className="flex flex-col justify-center items-center min-h-screen">
       {/* Heading */}
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-8">
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-4 pt-4">
         Popular Picks
       </h2>
 
       {/* Buttons Container */}
-      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
+      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between w-full flex-grow">
         {/* Button 1: Bags */}
         <PickButton
           imageUrl="https://picsum.photos/600/600?random=1"

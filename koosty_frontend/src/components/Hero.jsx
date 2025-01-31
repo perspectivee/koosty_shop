@@ -13,12 +13,12 @@ export default function Hero() {
       ></div>
 
       {/* Content Container */}
-      <div className="relative z-10 text-center text-white flex flex-col items-center gap-6">
-        {/* Logo */}
+      <div className="relative z-10 flex flex-col justify-around items-center h-full text-center text-white gap-6">
+        {/* Logo Above Heading */}
         <img
           src="/assets/images/white.png" // Replace with your logo path
           alt="Logo"
-          className="w-24 h-24 object-contain"
+          className="w-24 h-24 object-contain mb-4" // Added margin for spacing
         />
 
         {/* Heading */}
@@ -29,12 +29,12 @@ export default function Hero() {
           </span>
         </h2>
 
-        {/* Paragraphs (Visible Only on Mobile) */}
-        <div className="md:hidden flex flex-col gap-4">
-          <p className="font-custom-sans tracking-widest">
+        {/* Paragraphs (Centered) */}
+        <div className="md:hidden flex flex-col gap-4 text-left">
+          <p className="font-custom-sans tracking-widest text-justify">
             Discover the best products and services.
           </p>
-          <p className="font-custom-sans tracking-widest">
+          <p className="font-custom-sans tracking-widest text-justify">
             Experience excellence like never before.
           </p>
         </div>

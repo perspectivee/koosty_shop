@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import dummyProducts from "../../data/Products";
 
 export default function OrderNow() {
+  const { id } = useParams(); // Get the product ID from the URL parameters
   const [formData, setFormData] = useState({
     email: "",
     phone: "",
-    productType: "Select Product Type",
+    productType: "", // Initially empty; will be set in useEffect
     message: "",
   });
   const [formStatus, setFormStatus] = useState("");
+
+  useEffect(() => {
+    // Find the product by ID and set the productType
+    const product = dummyProducts.find((product) => product.id === id);
+    if (product) {
+      setFormData((prev) => ({
+        ...prev,
+        productType: product.name, // Autofill the product type
+      }));
+    }
+  }, [id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +36,7 @@ export default function OrderNow() {
     setFormData({
       email: "",
       phone: "",
-      productType: "Select Product Type",
+      productType: "",
       message: "",
     });
   };
@@ -30,13 +44,13 @@ export default function OrderNow() {
   return (
     <div className="bg-white min-h-screen px-6">
       <Navbar />
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 font-bold text-shadow-lg">
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 text-shadow-lg">
         Order Now!
       </h2>
 
       {formStatus && <p className="text-center text-green-500">{formStatus}</p>}
 
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-xl mx-auto"> {/* Increased max width for desktop */}
         <div className="mb-4">
           <input
             type="email"
@@ -63,22 +77,11 @@ export default function OrderNow() {
           />
         </div>
 
-        <div className="mb-4">
-          <select
-            id="productType"
-            name="productType"
-            value={formData.productType}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border-b border-[#014567] focus:outline-none"
-            disabled
-          >
-            <option value="Select Product Type" disabled>
-              Select Product Type
-            </option>
-            <option value="Product 1">Product 1</option>
-            <option value="Product 2">Product 2</option>
-            <option value="Product 3">Product 3</option>
-          </select>
+        <div className="px-4 mb-4 flex justify-between items-center border-b border-[#014567]">
+          <label className="text-gray-700">Product Type</label>
+          <span className="w-max px-4 py-2 bg-[#014567] text-white border-b border-[#014567]">
+            {formData.productType || "Loading..."}
+          </span>
         </div>
 
         <div className="mb-6">

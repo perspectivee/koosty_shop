@@ -3,17 +3,16 @@ import Navbar from "../components/Navbar"; // Import the Navbar component
 import SearchBar from "../components/SearchBar"; // Import the SearchBar component
 import ProductCard from "../components/ProductCard"; // Import the ProductCard component
 import allProducts from '../../data/Products';
+import Footer from "../components/Footer";
+
 export default function Products() {
-  // Dummy data for products
-
-
   // State for filtered products
   const [filteredProducts, setFilteredProducts] = useState(allProducts);
 
   // Handle search
   const handleSearch = (query) => {
     const filtered = allProducts.filter((product) =>
-      product.productName.toLowerCase().includes(query.toLowerCase())
+      product.name.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredProducts(filtered);
   };
@@ -29,7 +28,7 @@ export default function Products() {
       </div>
 
       {/* Products Heading */}
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 font-bold text-shadow-lg">
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 text-shadow-lg">
         Products
       </h2>
 
@@ -47,6 +46,7 @@ export default function Products() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -39,7 +39,7 @@ export default function NewArrivals() {
   return (
     <section className="p-6">
       {/* Heading */}
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-8 font-bold text-shadow-lg">
+      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-8 text-shadow-lg">
         New Arrivals
       </h2>
 

@@ -1,8 +1,8 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import dummyProducts from "../../data/Products"; // Import dummyProducts from the correct path
 import Navbar from "../components/Navbar"; // Import the Navbar component
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 
 export default function ProductDetail() {
   const { id } = useParams(); // Get the product ID from URL params
@@ -46,36 +46,41 @@ export default function ProductDetail() {
 
           {/* Product Details */}
           <div className="mt-6">
-            <h1 className="font-custom-sans text-3xl font-bold text-gray-800">
+            <h1 className="font-custom-sans text-3xl text-gray-800">
               {product.name}
             </h1>
             <p className="mt-4 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p className="mt-4 font-custom-sans text-2xl font-bold text-gray-800">
+            <p className="mt-4 font-custom-sans text-2xl text-gray-800">
               ${product.price.toFixed(2)}
             </p>
-            <button
-              onClick={handleAddToCart}
-              className="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <Link to={`/order/${id}`} className="mt-6 w-full">
+              <button
+                onClick={handleAddToCart}
+                className="w-full h-12 flex items-center justify-center"
+                style={{
+                  background: "linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)",
+                  border: 'none'
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              Add to Cart
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-white" // Changed color to white
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -104,36 +109,41 @@ export default function ProductDetail() {
 
           {/* Right Column: Product Details */}
           <div className="flex flex-col justify-center">
-            <h1 className="font-custom-sans text-4xl font-bold text-gray-800">
+            <h1 className="font-custom-sans text-4xl text-gray-800">
               {product.name}
             </h1>
             <p className="mt-4 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p className="mt-4 font-custom-sans text-3xl font-bold text-gray-800">
+            <p className="mt-4 font-custom-sans text-3xl text-gray-800">
               ${product.price.toFixed(2)}
             </p>
-            <button
-              onClick={handleAddToCart}
-              className="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <Link to={`/order/${id}`} className="mt-6 w-full">
+              <button
+                onClick={handleAddToCart}
+                className="w-full h-12 flex items-center justify-center"
+                style={{
+                  background: "linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)",
+                  border: 'none'
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              Add to Cart
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-white" // Changed color to white
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

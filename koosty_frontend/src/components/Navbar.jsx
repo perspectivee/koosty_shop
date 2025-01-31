@@ -8,12 +8,16 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-md p-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
-          <Link to="/">
+          <Link to="/" onClick={closeMenu}>
             <img
               src="/assets/images/black.png" // Replace with your logo path
               alt="Logo"
@@ -49,13 +53,13 @@ export default function Navbar() {
           className={`${isMenuOpen ? "flex" : "hidden"
             } md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0 flex-grow justify-center`} // Added flex-grow and justify-center
         >
-          <Link to="/" className="text-gray-800 hover:text-blue-500">
+          <Link to="/" className="font-custom-serif text-gray-800 hover:text-blue-500" onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/products" className="text-gray-800 hover:text-blue-500">
+          <Link to="/products" className="font-custom-serif text-gray-800 hover:text-blue-500" onClick={closeMenu}>
             Products
           </Link>
-          <Link to="/contact" className="text-gray-800 hover:text-blue-500">
+          <Link to="/contact" className="font-custom-serif text-gray-800 hover:text-blue-500" onClick={closeMenu}>
             Contact
           </Link>
         </div>

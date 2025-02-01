@@ -30,12 +30,12 @@ export default function Hero() {
         </h2>
 
         {/* Paragraphs (Centered) */}
-        <div className="md:hidden flex flex-col gap-4 text-left">
-          <p className="font-custom-sans tracking-widest text-justify">
-            Discover the best products and services.
+        <div className="md:hidden flex flex-col gap-4 text-left px-8">
+          <p className="font-custom-sans tracking-widest text-justify break-words hyphens-auto">
+            Discover the best pro&shy;ducts and servi&shy;ces.
           </p>
-          <p className="font-custom-sans tracking-widest text-justify">
-            Experience excellence like never before.
+          <p className="font-custom-sans tracking-widest text-justify break-words hyphens-auto">
+            Experience excellence li&shy;ke never before.
           </p>
         </div>
       </div>

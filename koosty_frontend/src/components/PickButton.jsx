@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PickButton({ imageUrl, text, isMiddleButton = false }) {
   return (
-    <div className={`flex-grow h-96 ${isMiddleButton ? "relative border-2 border-blue-500 p-4" : ""} flex`}>
+    <div className={`flex-grow h-[32rem] ${isMiddleButton ? "relative border-2 border-dotted border-blue-500 p-4" : ""} flex`}>
       <button
         className={`flex-grow w-full bg-cover bg-center flex items-center justify-center font-custom-sans text-3xl text-white overflow-hidden`}
         style={{

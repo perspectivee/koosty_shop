@@ -10,7 +10,7 @@ export default function PopularPicks() {
       </h2>
 
       {/* Buttons Container */}
-      <div className="flex flex-col gap-6 sm:flex-row sm:justify-center w-full max-w-6xl">
+      <div className="flex flex-col gap-6 sm:flex-row sm:justify-center w-full">
         {/* Button 1: Bags */}
         <div className="flex-grow sm:flex-grow-0 sm:w-1/3">
           <PickButton

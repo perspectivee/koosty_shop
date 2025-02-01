@@ -28,13 +28,13 @@ export default function Products() {
       </div>
 
       {/* Products Heading */}
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 text-shadow-lg">
+      <h2 className="font-custom-sans text-4xl sm:text-4xl text-center my-8 text-shadow-lg">
         Products
       </h2>
 
       {/* Product Grid */}
       <div className="container mx-auto p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 place-items-center">
           {filteredProducts.map((product, index) => (
             <ProductCard
               key={index}

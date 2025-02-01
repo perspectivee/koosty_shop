@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <div className="bg-white min-h-screen px-6">
       <Navbar />
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center my-8 text-shadow-lg">
+      <h2 className="font-custom-sans text-4xl sm:text-4xl text-center my-8 text-shadow-lg">
         Contact Us!
       </h2>
 

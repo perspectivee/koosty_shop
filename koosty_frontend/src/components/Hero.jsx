@@ -13,12 +13,12 @@ export default function Hero() {
       ></div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col justify-around items-center h-full text-center text-white gap-6">
+      <div className="relative z-10 flex flex-col justify-around items-center h-full text-center text-white gap-6 md:justify-normal">
         {/* Logo Above Heading */}
         <img
           src="/assets/images/white.png" // Replace with your logo path
           alt="Logo"
-          className="w-24 h-24 object-contain mb-4" // Added margin for spacing
+          className="w-32 h-32 object-contain mb-4 md:mb-[5.5rem] md:mt-16" // Added margin for spacing
         />
 
         {/* Heading */}

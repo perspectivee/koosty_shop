@@ -16,9 +16,9 @@ export default function MustGift() {
   ];
 
   return (
-    <section className="p-6">
+    <section className="py-6">
       {/* Heading */}
-      <h2 className="font-custom-sans text-3xl sm:text-4xl text-center mb-8">
+      <h2 className="font-custom-sans text-4xl sm:text-4xl text-center mb-8">
         Must Gift
       </h2>
 

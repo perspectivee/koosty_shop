@@ -5,7 +5,7 @@ export default function PopularPicks() {
   return (
     <section className="flex flex-col justify-center items-center min-h-screen overflow-hidden py-4">
       {/* Heading */}
-      <h2 className="font-custom-sans text-4xl sm:text-4xl text-center mb-8">
+      <h2 className="font-custom-sans lg:text-5xl md:text-4xl text-3xl text-center mb-8">
         Popular Picks
       </h2>
 

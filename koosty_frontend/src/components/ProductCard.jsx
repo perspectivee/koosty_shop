@@ -6,13 +6,13 @@ export default function ProductCard({ id, imageUrl, productName, price }) {
 
   return (
     <div
-      className="bg-white overflow-hidden cursor-pointer transform transition-transform hover:scale-105 flex flex-col h-80 max-w-64" // Fixed height and max width
+      className="bg-white overflow-hidden cursor-pointer transform transition-transform hover:scale-105 flex flex-col h-[37.5rem] max-w-98" // Height changed to 37.5rem
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Product Image with Overlay */}
       <Link to={`/products/${id}`}>
-        <div className="relative h-[16rem]"> {/* 80% of h-80 (20rem) */}
+        <div className="relative h-[30rem]"> {/* 80% of h-[37.5rem] */}
           <img
             src={imageUrl || "path/to/fallback-image.jpg"} // Fallback image path
             alt={productName || "Product image"} // Descriptive alt text
@@ -20,7 +20,11 @@ export default function ProductCard({ id, imageUrl, productName, price }) {
           />
           {/* Overlay and Info Icon */}
           {isHovered && (
-            <div className="absolute inset-x-0 bottom-0 h-[20%] bg-[#014567] opacity-60 flex items-center justify-center transition-opacity duration-300">
+            <div className="absolute inset-x-0 bottom-0 h-[10%] flex items-center justify-center"
+              style={{
+                background: 'linear-gradient(0deg, rgba(1, 69, 103, 0.47) -15.07%, rgba(2, 137, 205, 0.2585) 155.36%)'
+              }}
+            >
               <div className="p-2 rounded-full transform transition-transform duration-300 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

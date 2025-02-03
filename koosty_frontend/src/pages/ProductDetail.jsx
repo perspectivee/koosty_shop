@@ -86,7 +86,7 @@ export default function ProductDetail() {
         </div>
 
         {/* Desktop Layout (md and above) */}
-        <div className="hidden md:grid md:grid-cols-[1fr_3fr_2fr] md:gap-8 md:max-h-screen">
+        <div className="hidden md:grid md:grid-cols-[1fr_3fr_2fr] md:gap-8 md:min-h-screen">
           {/* Left Column: Additional Images */}
           <div className="flex flex-col gap-4 items-center"> {/* Centered horizontally */}
             {product.imgUrlArr.map((url, index) => (
@@ -94,7 +94,7 @@ export default function ProductDetail() {
                 key={index}
                 src={url}
                 alt={`${product.name} - ${index + 1}`}
-                className="w-20 h-20 object-cover shadow-md" // Removed rounded-lg
+                className="w-32 lg:w-48 h-32 lg:h-48 object-cover shadow-md" // Removed rounded-lg
               />
             ))}
           </div>
@@ -104,7 +104,7 @@ export default function ProductDetail() {
             <img
               src={product.imgUrl}
               alt={product.name}
-              className="w-full h-96 object-cover shadow-lg transform transition-transform duration-300 hover:scale-105" // Removed rounded-lg
+              className="w-full h-[36rem] object-cover shadow-lg transform transition-transform duration-300 hover:scale-105" // Removed rounded-lg
             />
           </div>
 
